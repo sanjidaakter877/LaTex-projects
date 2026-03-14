@@ -1,0 +1,192 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{venndiagram}
+
+\setlength{\parskip}{0.2cm}
+\setlength\parindent{0pt}
+
+\begin{document}
+
+
+Name: \textbf{Sanjida Akter} .
+
+Date: \textbf{03/11/2026} .
+ 
+Assignment: \textbf{HW-2}.
+
+\hrulefill
+
+\textbf{1. Multiverse of Madness}
+
+\begin{enumerate}
+\item[ (a) ] $|\mathcal{P}(A)| = 2^4 = 16$.
+
+\item[ (b) ] $\mathcal{P}(A) = \{ 
+\emptyset, \text{\{Stephen\}}, \text{\{Wanda\}}, \text{\{America\}}, \text{\{Wong\}},\text{\{Stephen,Wanda\}},\\
+\text{\{Stephen,America\}},\text{\{Stephen,Wong\}}, \text{\{Wanda,America\}}, \text{\{Wanda,Wong\}},\text{\{America,Wong\}},\\
+\text{\{Stephen,Wanda,America\}}, \text{\{Stephen,Wanda,Wong\}},\text{\{Stephen,America,Wong\}},\\
+ \text{\{Wanda,America,Wong\}},\text{\{Stephen,Wanda,America,Wong\}} \}$
+
+\item[ (c) ] If a set $S$ has $n \in \mathbb{N}$ elements, then $|\mathcal{P}(S)| = 2^n$, since each element can either be included or not in a subset.
+\end{enumerate}
+
+\textbf{2. Friends}
+
+\begin{enumerate}
+\item[ (a) ] $|W \times M| = 3 \times 3 = 9$.
+
+\item[ (b) ] $W \times M = \{ 
+(\text{Rachael},\text{Chandler}), (\text{Rachael},\text{Ross}), (\text{Rachael},\text{Joey}),
+(\text{Phoebe},\text{Chandler}), \\(\text{Phoebe},\text{Ross}), (\text{Phoebe},\text{Joey}),
+(\text{Monica},\text{Chandler}), (\text{Monica},\text{Ross}), (\text{Monica},\text{Joey}) 
+\}$
+
+\item[ (c) ] If $|S_1| = n$ and $|S_2| = m$, then $|S_1 \times S_2| = nm$, because each element of $S_1$ pairs with each element of $S_2$.
+\end{enumerate}
+
+
+\textbf{3. Venn Diagrams}
+
+\begin{venndiagram3sets}[hgap=0.2cm, vgap=0.2cm, 
+    labelA={$A$}, labelB={$B$}, labelC={$C$}, labelNotABC={$U$},
+    overlap=1cm, shade=white]
+
+\setkeys{venn}{shade=purple}
+\fillACapB
+\fillACapC
+\fillBCapC
+\fillACapBCapC
+
+\end{venndiagram3sets}%
+
+\textbf{4. Sequences}
+
+\begin{enumerate}
+\item[ (a) ] $\sum_{n=1}^{100} n = \frac{100(101)}{2} = 5050$.
+\item[ (b) ] $\sum_{n=1}^{55} n^2 = \frac{55(56)(111)}{6} = 56980$.
+\item[ (c) ] Let $A = \{1,3,5,7,9,\dots,155\}$. The number of terms is $\frac{155+1}{2} = 78$. The sum $\sum_{a \in A} a = 78^2 = 6084$.
+\item[ (d) ] $\sum_{n=1}^{55} 3^n = \frac{3^{56}-3}{2}$.
+\item[ (e) ] $\sum_{n=5}^{\infty} \frac{1}{4^n} = \frac{\frac{1}{4^5}}{1-\frac{1}{4}} = \frac{1}{768}$.
+\end{enumerate}
+
+\textbf{5. True or False}
+
+\begin{enumerate}
+
+\item[ (a) ] \textbf{Statement:} “9 is divisible by 3, or 9 is not divisible by 3.”  
+
+\textbf{Logical expression:} $p \lor \neg p$  
+
+\textbf{Explanation:} $p$ is true because 9 is divisible by 3. $\neg p$ is false. Since at least one part of the “or” statement is true, the whole statement is true.  
+
+\textbf{Answer:} True.
+
+\item[ (b) ] \textbf{Statement:} “If the current year is 1996, then the current year is 2026.”  
+
+\textbf{Logical expression:} $p \rightarrow q$  
+
+\textbf{Explanation:} $p$ is false (current year is not 1996). A conditional is only false if $p$ is true and $q$ is false. So this statement is true.  
+
+\textbf{Answer:} True.
+
+\item[ (c) ] \textbf{Statement:} “Earth is round, and Africa is not a country.” 
+ 
+\textbf{Logical expression:} $p \land q$  
+
+\textbf{Explanation:} Both $p$ and $q$ are true. Since “and” requires both to be true, the statement is true.  
+
+\textbf{Answer:} True.
+
+\item[ (d) ] \textbf{Statement:} “A person is a Brooklyn College student if and only if this person is a CUNY student.”  
+
+\textbf{Logical expression:} $p \leftrightarrow q$  
+
+\textbf{Explanation:} Not all CUNY students attend Brooklyn College. Biconditional requires both to have the same truth value, so the statement is false.  
+
+\textbf{Answer:} False.
+
+\item[ (e) ] \textbf{Statement:} $n^2 > 0$ for all $n \in \mathbb{Z}$.  
+
+\textbf{Logical expression:} $\forall n \in \mathbb{Z}, n^2 > 0$  
+
+\textbf{Explanation:} False because when $n=0$, $0^2=0$, which is not greater than 0.  
+
+\textbf{Answer:} False.
+
+\item[ (f) ] \textbf{Statement:} There exists a positive integer $n \in \mathbb{P}$ such that $n = \sum_{i=1}^{n-1} i = (n-1) + (n-2) + \dots + 2 + 1$  
+
+\textbf{Logical expression:} $\exists n \in \mathbb{P} : n = \sum_{i=1}^{n-1} i$  
+
+\textbf{Explanation:} True, because if we take $n=3$ (a positive integer), the sum $(3-1) + (3-2) = 2 + 1 = 3$ matches $n$.  
+
+\textbf{Answer:} True.
+
+\end{enumerate}
+
+\textbf{6. Truth Tables}
+
+\begin{enumerate}
+
+\item[ (a) ] Truth table for $(p \lor \neg q) \land \neg p$:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+$p$ & $q$ & $\neg p$ & $\neg q$ & $p \lor \neg q$ & $(p \lor \neg q) \land \neg p$ \\
+\hline
+0 & 0 & 1 & 1 & 1 & 1 \\
+0 & 1 & 1 & 0 & 0 & 0 \\
+1 & 0 & 0 & 1 & 1 & 0 \\
+1 & 1 & 0 & 0 & 1 & 0 \\
+\hline
+\end{tabular}
+\end{center}
+
+Explanation: Compute negations first, then $p \lor \neg q$, and finally AND it with $\neg p$.  
+
+\item[ (b) ] Truth tables for $(p \land q) \land r$ and $p \land (q \land r)$:
+
+\begin{center}
+\textbf{Table 1: $(p \land q) \land r$}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+$p$ & $q$ & $r$ & $p \land q$ & $(p \land q) \land r$ \\
+\hline
+0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 & 0 \\
+0 & 1 & 0 & 0 & 0 \\
+0 & 1 & 1 & 0 & 0 \\
+1 & 0 & 0 & 0 & 0 \\
+1 & 0 & 1 & 0 & 0 \\
+1 & 1 & 0 & 1 & 0 \\
+1 & 1 & 1 & 1 & 1 \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\textbf{Table 2: $p \land (q \land r)$}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+$p$ & $q$ & $r$ & $q \land r$ & $p \land (q \land r)$ \\
+\hline
+0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 & 0 \\
+0 & 1 & 0 & 0 & 0 \\
+0 & 1 & 1 & 1 & 0 \\
+1 & 0 & 0 & 0 & 0 \\
+1 & 0 & 1 & 0 & 0 \\
+1 & 1 & 0 & 0 & 0 \\
+1 & 1 & 1 & 1 & 1 \\
+\hline
+\end{tabular}
+\end{center}
+
+\item[ (c) ] Explanation: The last columns of both tables are identical. This shows that $(p \land q) \land r$ and $p \land (q \land r)$ give the same results for all $p$, $q$, and $r$.  
+
+\textbf{Conclusion:} These expressions are equivalent, demonstrating that AND is associative.
+
+\end{enumerate}
+
+\end{document}
